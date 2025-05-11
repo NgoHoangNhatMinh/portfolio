@@ -4,17 +4,17 @@ import { FaLinkedin, FaGithub } from "react-icons/fa"
 export default function Index() {
     return <>
         <div className="hero flex gap-12 flex-col items-center border-b border-gray-200">
-            <img src="src/assets/akchtually.jpg" alt="well akchtually" className="w-100 h-100 rounded-full my-12"/>
+            <img src="akchtually.jpg" alt="well akchtually" className="w-100 h-100 rounded-full my-12"/>
             <h1 className="text-xl font-bold my-12">Hello! I'm Lucas Ngo. I'm trying to build cool stuffs, which you can check out here.</h1>
         </div>
         <div className="about flex gap-12 flex-col items-center border-b border-gray-200">
             <h1 className="text-xl font-bold my-12">Outside of coding stuffs, I like music and chess. Here are some of my photos:</h1>
             <div className="flex flex-col items-center">
-                <img src="src/assets/mala_sushi.jpg" alt="" className="w-150"/>
+                <img src="mala_sushi.jpg" alt="" className="w-150"/>
                 <p>That's me in the middle with the blue guitar :)</p>
             </div>
             <div className="flex flex-col items-center">
-                <img src="src/assets/guitar.jpg" alt="" className="w-150"/>
+                <img src="guitar.jpg" alt="" className="w-150"/>
                 <p>And this is me performing</p>
             </div>
         </div>
@@ -23,12 +23,12 @@ export default function Index() {
             <div>
                 <h2>A forum website</h2>
                 <Link to={"https://cvwoforum.netlify.app/"}>CVWO Forum</Link>
-                <img src="src/assets/CVWO.png" alt="" className="w-150"/>
+                <img src="CVWO.png" alt="" className="w-150"/>
             </div>
             <div>
                 <h2>A forum website</h2>
                 <Link to={"https://nus-calendar.vercel.app/"}>NUSCalendy</Link>
-                <img src="src/assets/NUSCalendy.png" alt="" className="w-150"/>
+                <img src="NUSCalendy.png" alt="" className="w-150"/>
                 <p>We participated in the Interhall Hackathon organized by NUS's halls and won second place</p>
                 <Link to={"https://devpost.com/software/nuscalendy"}>NUSCalendy</Link>
             </div>
