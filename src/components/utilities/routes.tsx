@@ -7,6 +7,7 @@ import Skills from "../Skills";
 import Resume from "../Resume";
 import Contact from "../Contact";
 import Blogs from "../Blogs";
+import Error from "../Error";
 
 const routes = [
     {
@@ -45,8 +46,13 @@ const routes = [
                 path: "/blogs",
                 element: <Blogs/>
             },
+            {
+                path: "*",
+                element: <Error/>
+            }
         ]
-    }
+    },
+
 ]
 
 export default routes;
