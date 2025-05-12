@@ -13,7 +13,7 @@ function App() {
       />
       <div className=''>
         <Header></Header>
-        <main className='px-20 pt-16 flex flex-col items-center max-w-[80%] mx-auto py-8'>
+        <main className='px-20 pt-28 flex flex-col items-center max-w-[80%] mx-auto py-8'>
           <Outlet/>
         </main>
       </div>

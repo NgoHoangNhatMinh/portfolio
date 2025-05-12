@@ -3,17 +3,34 @@ import { useEffect, useState } from "react"
 
 export default function Header() {
     const [showHeader, setShowHeader] = useState(false);
+    const [scrolled, setScrolled] = useState(false);
+    const [mouseNearTop, setMouseNearTop] = useState(false);
 
     useEffect(() => {
         const handleScroll = () => {
-            setShowHeader(window.scrollY > 100);
+            setScrolled(window.scrollY > 100);
         };
+        const handleMouseMove = (event: MouseEvent) => {
+            setMouseNearTop(event.clientY < 100);
+        }
 
         // call handleScroll everytime we scroll
         window.addEventListener("scroll", handleScroll);
+        window.addEventListener("mousemove", handleMouseMove);
         // Removes the event listener when the component unmounts
-        return () => window.removeEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+            window.removeEventListener("mousemove", handleMouseMove);
+        }
     }, []);
+
+    useEffect(() => {
+        if (scrolled) {
+            setShowHeader(true);
+        } else {
+            setShowHeader(mouseNearTop);
+        }
+    }, [scrolled, mouseNearTop])
 
     return <>
     <header 
