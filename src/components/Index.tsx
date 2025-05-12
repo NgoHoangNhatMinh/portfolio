@@ -4,7 +4,7 @@ export default function Index() {
     return <>
         <div className="hero flex gap-12 flex-col items-center border-b border-gray-200">
             <img src="akchtually.jpg" alt="well akchtually" className="w-100 h-100 rounded-full my-12"/>
-            <h1 className="text-xl font-bold my-12">Hello! I'm Lucas Ngo. I'm trying to build cool stuffs, which you can check out here.</h1>
+            <h1 className="text-xl font-bold my-12">Hello! I'm Minh, but people also call me Lucas. I'm trying to build cool stuffs, which you can check out here.</h1>
         </div>
         <div className="about flex gap-12 flex-col items-center border-b border-gray-200">
             <h1 className="text-xl font-bold my-12">Outside of coding stuffs, I like music and chess. Here are some of my photos:</h1>
