@@ -1,7 +1,7 @@
 export default function About() {
     return <>
         <img src="akchtually.jpg" alt="" className="w-64 rounded-full my-12"/>
-        <div className="about-description flex flex-col items-center px-100">
+        <div className="about-description flex flex-col items-center px-60">
             <p className="py-4">
                 I'm currently doing a Bachelor of Computing and Bachelor of Business Administration at NUS.
             </p>

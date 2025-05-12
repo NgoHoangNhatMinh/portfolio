@@ -2,7 +2,12 @@ import { Link } from "react-router-dom"
 
 export default function Header() {
     return <>
-    <header className="sticky top-0 left-0 w-full shadow z-50">
+    <header 
+        className="sticky top-0 left-0 w-full shadow z-50"
+        style={{
+            background: 'linear-gradient(rgb(120, 140, 176) 0%, rgb(174, 185, 212) 100%'
+        }}
+    >
         <div className="p-4 flex justify-between items-center">
             <div className="mr-auto px-8">
                 <Link to={"/"} className="group">
@@ -15,11 +20,11 @@ export default function Header() {
                 </Link>
             </div>
             <div className="flex gap-6">
-                <Link to={"/about"} className="underline hover:text-gray-500">About Me</Link>
-                <Link to={"/projects"} className="underline hover:text-gray-500">My Projects</Link>
-                <Link to={"/experience"} className="underline hover:text-gray-500">Experience</Link>
+                <Link to={"/about"} className="underline hover:text-gray-500 font-bold text-white">About Me</Link>
+                <Link to={"/projects"} className="underline hover:text-gray-500 font-bold text-white">My Projects</Link>
+                <Link to={"/experience"} className="underline hover:text-gray-500 font-bold text-white">Experience</Link>
                 {/* <Link to={"/skills"} className="underline hover:text-gray-500">Skills</Link> */}
-                <Link to={"/contact"} className="underline hover:text-gray-500">Contact</Link>
+                <Link to={"/contact"} className="underline hover:text-gray-500 font-bold text-white">Contact</Link>
             </div>
         </div>
     </header>
