@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import { FaLinkedin, FaGithub } from "react-icons/fa"
 
 export default function Index() {
