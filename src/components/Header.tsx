@@ -43,14 +43,14 @@ export default function Header() {
     >
         <div className="p-4 flex justify-between items-center">
             <div className="mr-auto px-8">
-                <Link to={"/"} className="group">
-                    <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                <a href="/" className="group">
+                        <svg width="50" height="50" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="25" cy="25" r="24" fill="white" className="group-hover:fill-neutral-300 transition duration-300"/>
                         <text x="20" y="30" text-anchor="middle" font-size="35" font-family="Arial" fill="black">L</text>
                         <text x="30" y="40" text-anchor="middle" font-size="35" font-family="Arial" fill="black">N</text>
                         <circle cx="47" cy="47" r="3" fill="white" />
                     </svg>
-                </Link>
+                </a>
             </div>
             <div className="flex gap-6 px-8">
                 <Link to={"/about"} className="underline hover:text-gray-500 font-bold text-white text-xl">About Me</Link>
