@@ -5,9 +5,9 @@ function App() {
 
   return (
     <>
-      <div style={{ backgroundColor: '#fdf6e3' }} className='px-20'>
+      <div className='px-20'>
         <Header></Header>
-        <main className='pt-16 flex flex-col'>
+        <main className='pt-16 flex flex-col items-center max-w-[80%] mx-auto py-8'>
           <Outlet/>
         </main>
       </div>

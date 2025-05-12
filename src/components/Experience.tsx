@@ -1,8 +1,5 @@
-import { Link } from "react-router-dom"
-
 export default function Experience() {
     return <>
-        <h1>MY EXPERIENCE</h1>
-        <Link to={"/"}>Back</Link>
+        <h1 className="text-xl font-bold">This summer (May 2025), I will be starting an internship through the Computer for Voluntary Welfare Organisations Program, spearheaded by Dr Ben Leong.</h1>
     </>
 }

@@ -22,15 +22,36 @@ export default function Index() {
             <h1 className="text-xl font-bold">These are some of things I worked and am working on:</h1>
             <div>
                 <h2>A forum website</h2>
-                <Link to={"https://cvwoforum.netlify.app/"}>CVWO Forum</Link>
+                <a 
+                    href="https://cvwoforum.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-gray-500"
+                >
+                    CVWO Forum
+                </a>
                 <img src="CVWO.png" alt="" className="w-150"/>
             </div>
             <div>
                 <h2>A forum website</h2>
-                <Link to={"https://nus-calendar.vercel.app/"}>NUSCalendy</Link>
+                <a 
+                    href="https://nus-calendar.vercel.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-gray-500"
+                >
+                    NUSCalendy
+                </a>
                 <img src="NUSCalendy.png" alt="" className="w-150"/>
                 <p>We participated in the Interhall Hackathon organized by NUS's halls and won second place</p>
-                <Link to={"https://devpost.com/software/nuscalendy"}>NUSCalendy</Link>
+                <a 
+                    href="https://devpost.com/software/nuscalendy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="underline hover:text-gray-500"
+                >
+                    NUSCalendy
+                </a>
             </div>
         </div>
         <div className="experience flex gap-12 flex-col items-center border-b border-gray-200 py-12">
@@ -63,12 +84,20 @@ export default function Index() {
             </div>
         </div>
         <div className="contact flex gap-4 justify-center border-b border-gray-200 py-12">
-            <Link to={"https://www.linkedin.com/in/ngohoangnhatminh/"}>
-                <FaLinkedin></FaLinkedin>
-            </Link>
-            <Link to={"https://github.com/NgoHoangNhatMinh"}>
+            <a 
+                href="https://github.com/NgoHoangNhatMinh"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
                 <FaGithub></FaGithub>
-            </Link>
+            </a>
+            <a 
+                href="https://www.linkedin.com/in/ngohoangnhatminh/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                <FaLinkedin></FaLinkedin>
+            </a>
         </div>
     </>
 }
