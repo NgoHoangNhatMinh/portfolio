@@ -2,16 +2,17 @@ import { useEffect, useRef, useState } from "react";
 
 type LoadingProps = {
     className?: string;
+    loadingTime: number;
 }
 
-export default function Loading({className}: LoadingProps) {
+export default function Loading({className, loadingTime}: LoadingProps) {
     const initialTime = useRef(new Date().getTime());
     const [time, setTime] = useState(initialTime.current);
 
     useEffect(() => {
         const interval = setInterval(() => {
             setTime(new Date().getTime());
-        }, 20);
+        }, 10);
 
         return () => clearInterval(interval);
     }, [])
@@ -21,7 +22,7 @@ export default function Loading({className}: LoadingProps) {
         <div className="loadingBar w-100 h-3 border-1 border-white">
             <div 
                 className="progress h-2.5 bg-white"
-                style={{ width: `${Math.min((time - initialTime.current) / 10, 100)}%` }}></div>
+                style={{ width: `${Math.min((time - initialTime.current) / (loadingTime / 100), 100)}%` }}></div>
         </div>
     </div>
 

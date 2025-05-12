@@ -5,14 +5,15 @@ import { useEffect, useState } from 'react'
 
 function App() {
   const [loading, setLoading] = useState(true)
+  const loadingTime = 2000
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 1000)
+    setTimeout(() => setLoading(false), loadingTime)
   }, [])
 
   return (
     <>
-      <Loading className={`${loading ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} transition-opacity duration-200`}></Loading>
+      <Loading className={`${loading ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'} transition-opacity duration-200`} loadingTime={loadingTime}></Loading>
       <div 
         className="fixed inset-0 -z-10" 
         style={{
