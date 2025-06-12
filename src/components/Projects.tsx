@@ -1,3 +1,4 @@
+import ChessPage from "../pages/ChessPage";
 
 export default function Projects() {
     return <>
@@ -35,5 +36,6 @@ export default function Projects() {
                 NUSCalendy
             </a>
         </div>
+        <ChessPage></ChessPage>
     </>
 }
